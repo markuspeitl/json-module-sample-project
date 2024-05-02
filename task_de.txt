@@ -11,13 +11,15 @@ Die Anwendung sollte gestartet werden, indem Sie Folgendes eingeben:
 `npm start` 
 in Ihrem Terminal, das das `start`-Skript ausführt.
 
-Um zu überprüfen, ob Ihre Lösung die korrekten Ausgabedaten erzeugt, können Sie die Tests mit
+
+Um zu überprüfen, ob die json datei richtig eingelesen wurde in `read-people`, können Sie die Tests mit
 `npm run test`
 ausführen. Die Befehlszeile sollte dann nur
 `N passing`
 und keine
 `N failing`
 Nachrichten anzeigen.
+
 
 ----------------------------------------------------
 
@@ -37,8 +39,6 @@ Nachrichten anzeigen.
 
 5. Geben Sie diese Informationen/Zeilen anschließend als Tabelle unter Verwendung des `table`-Pakets aus.
 (Hinweis: Das Feld `address` muss entfernt werden, um ordnungsgemäß in einer Tabelle angezeigt zu werden, und `address.city` und `address.country` müssen zum Eintrag der Person hinzugefügt werden, aus dem sie extrahiert wurden.)
-
-6. Überprüfen Sie, ob Ihre Lösung die korrekten Ausgabedaten erzeugt, indem Sie `npm run test` ausführen.
 
 ----------------------------------------------------
 

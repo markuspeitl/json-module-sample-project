@@ -13,7 +13,7 @@ The application should run by entering:
 `npm start` 
 in your terminal which executes the `start` script.
 
-To verify if your solution produces the correct output data you can run the tests with
+To verify if your solution does read the json correctly in `read-people` you can run
 `npm run test`
 The command line should then only show 
 `N passing`

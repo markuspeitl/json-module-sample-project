@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/extract.js",
+    "start": "node src/select-people-of-ages-cli.js 'data/people.json' 17 66",
     "test": "npx mocha src/tests/*",
     "bonus:test": "npx mocha src/bonus-tests/*"
   },

@@ -1,0 +1,8 @@
+- table
+https://www.npmjs.com/package/table
+- argparse
+https://www.npmjs.com/package/argparse
+- readFileSync
+https://nodejs.org/api/fs.html#fsreadfilesyncpath-options
+- writeFileSync
+https://nodejs.org/api/fs.html#fswritefilesyncfile-data-options

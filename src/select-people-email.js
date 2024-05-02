@@ -1,0 +1,1 @@
+const { readPeople } = require('./read-people');
