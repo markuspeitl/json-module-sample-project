@@ -31,7 +31,7 @@ messages.
 2. Append an entry about an imaginary person in the format of a people entry of the json to the file and write it to memory.
 `fs.writeFileSync`
 
-3. Find/Filter/Transform the list at `parsedjson.people` by the following conditions:
+3. Find/Filter/Transform the list at in the program by the following conditions:
     1. People with ages between [17 - 66] (including both 17 and 66 in the resulting list)
     2. People with an email address ending in `@yahoo.com` 
 

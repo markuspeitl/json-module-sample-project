@@ -1,0 +1,103 @@
+----------------------------------------------------
+
+# Einrichtung & Testen
+
+Öffnen Sie die `package.json`-Datei.
+Führen Sie `npm install` aus, um die in der `dependencies`-Eigenschaft aufgeführten Pakete zu installieren.
+
+In der `scripts`-Eigenschaft sehen Sie bereits registrierte Skripte `start` und `test`.
+
+Die Anwendung sollte gestartet werden, indem Sie Folgendes eingeben:
+`npm start` 
+in Ihrem Terminal, das das `start`-Skript ausführt.
+
+Um zu überprüfen, ob Ihre Lösung die korrekten Ausgabedaten erzeugt, können Sie die Tests mit
+`npm run test`
+ausführen. Die Befehlszeile sollte dann nur
+`N passing`
+und keine
+`N failing`
+Nachrichten anzeigen.
+
+----------------------------------------------------
+
+# Aufgaben
+
+1. Lesen Sie das JSON, das Informationen über mehrere Personen aus `data/people.json` aus dem Dateisystem in den Speicher enthält.
+`fs.readFileSync`
+
+2. Fügen Sie einen Eintrag über eine imaginäre Person im Format eines Personen-Eintrags des JSON zur Datei hinzu und schreiben Sie ihn in den Speicher.
+`fs.writeFileSync`
+
+3. Finden/Filtern/Transformieren Sie die Liste im Programm anhand der folgenden Bedingungen:
+    1. Personen im Alter zwischen [17 - 66] (einschließlich sowohl mit dem Alter 17 als auch 66 in der resultierenden Liste)
+    2. Personen mit einer E-Mail-Adresse, die auf `@yahoo.com` endet 
+
+4. Sortieren Sie die ausgewählten Einträge nach ihrer `id`.
+
+5. Geben Sie diese Informationen/Zeilen anschließend als Tabelle unter Verwendung des `table`-Pakets aus.
+(Hinweis: Das Feld `address` muss entfernt werden, um ordnungsgemäß in einer Tabelle angezeigt zu werden, und `address.city` und `address.country` müssen zum Eintrag der Person hinzugefügt werden, aus dem sie extrahiert wurden.)
+
+6. Überprüfen Sie, ob Ihre Lösung die korrekten Ausgabedaten erzeugt, indem Sie `npm run test` ausführen.
+
+----------------------------------------------------
+
+## Bonusaufgabe:
+Implementieren Sie die Funktion `tableToHtml`, die die resultierenden Zeilen von JSON-Daten in eine HTML-Repräsentation in das folgende Format zu kovertieren:
+```
+const inputData = [
+    ['Name', 'Alter'],
+    ['Franz', 19],
+    ['Hansi', 43],
+];
+const outputData = `\
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Alter</th>
+    </tr>
+    <tr>
+        <td>Franz</td>
+        <td>19</td>
+    </tr>
+    <tr>
+        <td>Hansi</td>
+        <td>43</td>
+    </tr>
+</table>`;
+```
+
+----------------------------------------------------
+
+## Bonusaufgabe:
+Lesen Sie people.json ein und transformieren Sie die Personen-Einträge, indem Sie den `country` Wert mit einer Liste von Personen unter `people` verknüpfen, 
+die in diesem Land mit dem Wert leben.
+Und schreiben Sie diese Daten mit 
+`fs.writeFileSync` 
+in data/cities.json.
+
+Die resultierenden Daten sollten so aussehen:
+```
+{
+    "Sudan": {
+        "people": [
+            {
+                "id": 40,
+                "name": "John Shoemaker",
+                "age": 23,
+                "email": "Lorine62@yahoo.com",
+                "city": "City1"
+            },
+            {
+                "id": 9,
+                "name": "Kitty Aufderhar",
+                "age": 29,
+                "email": "Lorine62@yahoo.com",
+                "city": "South Adelbert"
+            }
+        ]
+    }
+}
+```
+
+----------------------------------------------------
