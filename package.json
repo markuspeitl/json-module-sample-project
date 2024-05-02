@@ -4,8 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/extract.js",
+    "test": "npx mocha src/tests/*",
+    "bonus:test": "npx mocha src/bonus-tests/*"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "express": "^4.19.2",
+    "mocha": "^10.4.0",
+    "table": "^6.8.2"
+  }
 }
